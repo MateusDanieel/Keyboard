@@ -1,0 +1,37 @@
+.sec-main {
+    margin: 100px 0 0;
+
+    &__keyboard {
+        &__row {
+            display: flex;
+
+            &__keygroup {
+                display: flex;
+                margin: 0 20px 0 0;
+            }
+
+            &__key {
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 18px;
+                width: 50px;
+                height: 50px;
+                border: 2px solid #38304c;
+                color: #38304c;
+                margin: 0 10px 10px 0;
+                border-radius: 8px;
+                font-weight: 700;
+                cursor: default;
+
+                &.checked {
+                    background-color: #0df5e3;
+                    border-color: #0df5e3;
+                    color: #201a30;
+                }
+            }
+        }
+    }
+
+}
