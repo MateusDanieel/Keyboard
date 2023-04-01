@@ -2,7 +2,7 @@
     'use strict';
     
     const keyboardKeys = document.querySelectorAll('.sec-main__keyboard__row__key');
-    const keyboardFunctKeys = [9, 18, 44, 112, 114, 116, 117, 118, 121, 122, 123];
+    const keyboardFunctKeys = [9, 18, 44, 92, 112, 114, 116, 117, 118, 121, 122, 123];
     
     keyboardKeys.forEach((keyboardKey) => {
         

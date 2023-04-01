@@ -2,12 +2,18 @@
     margin: 100px 0 0;
 
     &__keyboard {
+
         &__row {
             display: flex;
 
             &__keygroup {
                 display: flex;
                 margin: 0 25px 0 0;
+
+                &.arrow-up-center {
+                    justify-content: center;
+                    width: 225px;
+                }
             }
 
             &__key {
