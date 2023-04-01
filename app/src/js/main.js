@@ -2,14 +2,10 @@
     'use strict';
     
     const keyboardKeys = document.querySelectorAll('.sec-main__keyboard__row__key');
-    const keyboardFunctKeys = [44, 112, 114, 116, 117, 118, 121, 122, 123];
+    const keyboardFunctKeys = [9, 18, 44, 92, 112, 114, 116, 117, 118, 121, 122, 123];
     
     keyboardKeys.forEach((keyboardKey) => {
         
-        if(keyboardKey.innerText.length > 3) {
-            keyboardKey.setAttribute('style', 'font-size: 10px !important;');
-        }
-
         document.addEventListener('keydown', function(e) {
             let code = e.which || e.keyCode;
 
@@ -19,7 +15,7 @@
                 }
             })
             
-            if (keyboardKey.innerText == e.key || keyboardKey.dataset.keycode == e.keyCode) {
+            if (keyboardKey.dataset.keycode == e.keyCode) {
 
                 if (keyboardKey.classList.contains('checked')) {
 
@@ -39,7 +35,7 @@
 
         document.addEventListener('keyup', function(e) {
            
-            if (keyboardKey.dataset.keycode == '44' && keyboardKey.dataset.keycode == e.keyCode) {
+            if ((keyboardKey.dataset.keycode == '44' && keyboardKey.dataset.keycode == e.keyCode)) {
 
                 if (keyboardKey.classList.contains('checked')) {
                     keyboardKey.classList.remove('checked');
