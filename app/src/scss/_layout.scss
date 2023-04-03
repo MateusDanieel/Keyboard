@@ -1,5 +1,22 @@
+.btn {
+    display: block;
+    background-color: #0df5e3;
+    color: #201a30;
+    margin: 50px auto 0;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 20px;
+    max-width: 160px;
+    text-align: center;
+    font-size: 18px;
+
+    &:hover {
+        opacity: .9;
+    }
+}
+
 .sec-main {
-    margin: 100px 0 0;
+    margin: 50px 0 0;
 
     &__keyboard {
 
